@@ -10,7 +10,7 @@
   
   <title>
     
-      About | Fuzz&#39;s Blog
+      Fuzz&#39;s Blog
     
   </title>
   <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -129,46 +129,38 @@
   </div>
 </header>
 
-    <div id="about-banner" style="background-image: url(http://file.muyutech.com/about.jpg)"></div>
-<div class="author">
-  <div class="head">
-    <img src="https://avatars3.githubusercontent.com/u/16443628?v=3&s=460" />
-  </div>
-  <h3>Fuzz</h3>
-  
-    <p class="description">The end is always near.</p>
-  
-  <section class="share-icons">
-    
-    
-    
-      <a class="icon-github" href="https://github.com/fuzz-sec" target="_blank">
-        <span class="fa-stack fa-lg">
-          <i class="fa fa-circle fa-stack-2x"></i>
-          <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-        </span>
-      </a>
-    
-    
-    
-    
-  </section>
+    <div id="article-banner">
+  <h2>Archives</h2>
+  <p class="post-date">文章归档</p>
 </div>
+<main class="app-body" id="archives">
+  
+  
+  
+    <section class="time-section">
+  <h1 class="section-year">
+    2019
+  </h1>
+  <div class="section-list">
+    
+    
+      <div class="section-list-item">
+        <a href="/2019/10/31/hello-world/" class="archive-title">Hello World</a>
+        <p class="archive-date">10-31</p>
+      </div>
+    
+  </div>
+</section>
+  
+</main>
 
 <script>
   (function () {
-    $('.header').removeClass('fixed-header')
-    var windowH = $(window).height();
-    var author = $('.author')
-    var bodyH = author.offset().top + author[0].offsetHeight + 71;
-    if (bodyH < windowH) {
-      author.css({
-        'margin-bottom': windowH - bodyH
-      })
-    }
+    var url = 'http://yoursite.com/categories/aa/index.html';
+    $('#article-banner').geopattern(url);
+    $('.header').removeClass('fixed-header');
   })();
 </script>
-
     <div class="scroll-top">
   <span class="arrow-icon"></span>
 </div>
